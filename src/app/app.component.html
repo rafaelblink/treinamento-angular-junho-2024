@@ -1,11 +1,2 @@
-<h1>Home Page</h1>
-
-{{ title }}
-
-<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="title">
-
-<button (click)="exibirAlerta('não tem')" type="button" class="btn btn-primary">Primary</button>
-
-
-
+<app-header [items]="items"></app-header>
 <router-outlet></router-outlet>
