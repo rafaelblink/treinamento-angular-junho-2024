@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'treinamento-angular-junho-2024';
+
+  exibirAlerta(has: string) {
+    alert(`O palmeiras ${has} mundial`);
+  }
 }
