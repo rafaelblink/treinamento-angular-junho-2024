@@ -1,92 +1,33 @@
 {
     "profiles": [
         {
+            "id": 1,
             "name": "Alice",
             "role": "admin",
             "age": 32,
             "email": "alice@example.com",
             "isActive": true,
             "country": "USA",
-            "languages": [
-                "English"
-            ],
             "experience": "Senior"
         },
         {
+            "id": 2,
             "name": "Bob",
             "role": "user",
             "age": 28,
             "email": "bob@example.com",
             "isActive": false,
             "country": "Canada",
-            "languages": [
-                "English",
-                "French"
-            ],
             "experience": "Junior"
         },
         {
+            "id": 3,
             "name": "Charlie",
             "role": "moderator",
             "age": 35,
             "email": "charlie@example.com",
             "isActive": true,
             "country": "UK",
-            "languages": [
-                "English"
-            ],
-            "experience": "Mid-level"
-        },
-        {
-            "name": "David",
-            "role": "user",
-            "age": 29,
-            "email": "david@example.com",
-            "isActive": true,
-            "country": "Australia",
-            "languages": [
-                "English"
-            ],
-            "experience": "Junior"
-        },
-        {
-            "name": "Emma",
-            "role": "admin",
-            "age": 25,
-            "email": "emma@example.com",
-            "isActive": true,
-            "country": "Germany",
-            "languages": [
-                "German",
-                "English",
-                "Spanish"
-            ],
-            "experience": "Entry-level"
-        },
-        {
-            "name": "Frank",
-            "role": "guest",
-            "age": 38,
-            "email": "frank@example.com",
-            "isActive": true,
-            "country": "France",
-            "languages": [
-                "French",
-                "English"
-            ],
-            "experience": "Senior"
-        },
-        {
-            "name": "Grace",
-            "role": "user",
-            "age": 31,
-            "email": "grace@example.com",
-            "isActive": false,
-            "country": "Italy",
-            "languages": [
-                "Italian",
-                "English"
-            ],
             "experience": "Mid-level"
         }
     ]
