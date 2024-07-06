@@ -13,4 +13,8 @@ export class ProfileService {
   buscarTodos() {
     return this.http.get(this.api);
   }
+
+  cadastrar(profile: any) {
+    return this.http.post<any>(this.api, profile);
+  }
 }

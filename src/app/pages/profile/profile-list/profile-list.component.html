@@ -8,6 +8,7 @@
             <th scope="col">Nome</th>
             <th scope="col">Perfil</th>
             <th scope="col">Idade</th>
+            <th scope="col">Ações</th>
           </tr>
         </thead>
         <tbody>
@@ -16,6 +17,10 @@
             <td>{{ profile.name }}</td>
             <td>{{ profile.role }}</td>
             <td>{{ profile.age }}</td>
+            <td>
+                <a class="btn btn-primary btn-sm" routerLink="/profile/edit/{{profile.id}}">Editar</a>
+                
+            </td>
           </tr>
         </tbody>
     </table>

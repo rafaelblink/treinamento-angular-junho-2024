@@ -13,6 +13,9 @@ const routes: Routes = [
   },
   {
     path: 'profile/create', component: ProfileCreateUpdateComponent
+  },
+  {
+    path: 'profile/edit/:id', component: ProfileCreateUpdateComponent
   }
 ];
 
