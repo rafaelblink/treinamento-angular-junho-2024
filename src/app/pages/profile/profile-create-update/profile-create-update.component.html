@@ -12,6 +12,22 @@
             <label for="age" class="form-label">Idade</label>
             <input type="number" class="form-control" id="age" formControlName="age">
         </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email">
+          </div>
+          <div class="mb-3">
+            <label for="ativo" class="form-label">Ativo</label>
+            <input type="checkbox" class="form-check-input" id="ativo" formControlName="ativo">
+          </div>
+          <div class="mb-3">
+            <label for="pais" class="form-label">País</label>
+            <input type="text" class="form-control" id="pais" formControlName="pais">
+          </div>
+          <div class="mb-3">
+            <label for="nivelExperiencia" class="form-label">Nível de Experiência</label>
+            <input type="number" class="form-control" id="nivelExperiencia" formControlName="nivelExperiencia">
+          </div>
         <button type="submit" class="btn btn-primary" [disabled]="!profileForm.valid">Cadastrar</button>
     </form>
 </div>

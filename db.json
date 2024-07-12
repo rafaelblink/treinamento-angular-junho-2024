@@ -27,6 +27,16 @@
       "name": "Lucas",
       "role": "developer",
       "age": 10
+    },
+    {
+      "id": "a9b7",
+      "name": "nico",
+      "role": "dev",
+      "age": 47,
+      "email": "nico@nico.com",
+      "ativo": true,
+      "pais": "brasil",
+      "nivelExperiencia": 2
     }
   ]
 }

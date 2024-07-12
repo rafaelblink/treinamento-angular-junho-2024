@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ProfileService } from '../../../services/profile.service';
 import Swal from 'sweetalert2';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-profile-create-update',
@@ -10,13 +10,20 @@ import { Router } from '@angular/router';
   styleUrls: ['./profile-create-update.component.css']
 })
 export class ProfileCreateUpdateComponent {
+  profileId: String;
 
-  constructor(private profileService: ProfileService, private router: Router) {}
+  constructor(private route: ActivatedRoute, private profileService: ProfileService, private router: Router) {
+    this.profileId = route.snapshot.params['id'];
+  }
   
   profileForm = new FormGroup({
     name: new FormControl('', Validators.required),
     role: new FormControl('', Validators.required),
-    age: new FormControl(0, [Validators.required, Validators.min(0)])
+    age: new FormControl(0, [Validators.required, Validators.min(0)]),
+    email: new FormControl('', [Validators.required, Validators.email]),
+    ativo: new FormControl(false),
+    pais: new FormControl('', Validators.required),
+    nivelExperiencia: new FormControl(0, [Validators.required, Validators.min(0)])
   })
 
   onSubmit() {
@@ -26,7 +33,7 @@ export class ProfileCreateUpdateComponent {
       console.log(result)
       Swal.fire({
         title: 'Pessoa cadastrada com sucesso!',
-        text: 'PARABENS CHAMPS!!',
+        text: 'PARABENS!!',
         icon: 'success',
       })
       this.router.navigateByUrl('/profile')
