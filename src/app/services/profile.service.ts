@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Pessoa } from '../interfaces/menu-item';
 
 @Injectable({
   providedIn: 'root'
@@ -10,22 +11,22 @@ export class ProfileService {
   constructor(private http: HttpClient) { }
 
   buscarTodos() {
-    return this.http.get(this.api);
+    return this.http.get<Pessoa[]>(this.api);
   }
 
   buscarPorId(id: number) {
-    return this.http.get<any>(`${this.api}/${id}`);
+    return this.http.get<Pessoa>(`${this.api}/${id}`);
   }
 
-  cadastrar(profile: any) {
-    return this.http.post<any>(this.api, profile);
+  cadastrar(profile: Pessoa) {
+    return this.http.post<Pessoa>(this.api, profile);
   }
 
-  editar(id: number, profile: any) {
-    return this.http.put<any>(`${this.api}/${id}`, profile);
+  editar(id: number, profile: Pessoa) {
+    return this.http.put<Pessoa>(`${this.api}/${id}`, profile);
   }
 
   excluir(id: number) {
-    return this.http.delete<any>(`${this.api}/${id}`);
+    return this.http.delete<Pessoa>(`${this.api}/${id}`);
   }
 }

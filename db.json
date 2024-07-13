@@ -37,6 +37,16 @@
       "ativo": true,
       "pais": "brasil",
       "nivelExperiencia": 2
+    },
+    {
+      "id": "91e7",
+      "name": "ana",
+      "role": "web",
+      "age": 23,
+      "email": "ana@ana.com",
+      "ativo": false,
+      "pais": "arg",
+      "nivelExperiencia": 1
     }
   ]
 }
