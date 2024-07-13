@@ -23,12 +23,6 @@
       "age": 10
     },
     {
-      "id": "ce7a",
-      "name": "Lucas",
-      "role": "developer",
-      "age": 10
-    },
-    {
       "id": "a9b7",
       "name": "nico",
       "role": "dev",
@@ -47,6 +41,16 @@
       "ativo": false,
       "pais": "arg",
       "nivelExperiencia": 1
+    },
+    {
+      "id": "5ca7",
+      "name": "jose maria",
+      "role": "dev back",
+      "age": 25,
+      "email": "josemaria@ze.com.br",
+      "ativo": true,
+      "pais": "uru",
+      "nivelExperiencia": 8
     }
   ]
 }

@@ -1,25 +1,18 @@
-import { Component } from '@angular/core';
-import { ProfileService } from '../../../services/profile.service';
-import { map } from 'rxjs';
+import { Component, Input } from '@angular/core';
+import { Pessoa } from '../interfaces/menu-item';
 import Swal from 'sweetalert2';
+import { ProfileService } from '../services/profile.service';
 
 @Component({
-  selector: 'app-profile-list',
-  templateUrl: './profile-list.component.html',
-  styleUrls: ['./profile-list.component.css']
+  selector: 'app-profile-table',
+  templateUrl: './profile-table.component.html',
+  styleUrls: ['./profile-table.component.css']
 })
-export class ProfileListComponent {
-  constructor(private profileService: ProfileService) {}
-  profiles: any;
+export class ProfileTableComponent {
+  @Input() profiles: Pessoa[] = [];
 
-  ngOnInit() { //
-    this.profileService.buscarTodos().subscribe(result => {
-      this.profiles = result;
-    }, error => {
-      console.error(error);
-    });
-  }
-  
+  constructor(private profileService: ProfileService) {}
+
   deleteProfile(id: number) {
     Swal.fire({
       title: 'Tem certeza?',
