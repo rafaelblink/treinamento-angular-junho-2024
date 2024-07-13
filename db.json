@@ -23,10 +23,34 @@
       "age": 10
     },
     {
-      "id": "ce7a",
-      "name": "Lucas",
-      "role": "developer",
-      "age": 10
+      "id": "a9b7",
+      "name": "nico",
+      "role": "dev",
+      "age": 47,
+      "email": "nico@nico.com",
+      "ativo": true,
+      "pais": "brasil",
+      "nivelExperiencia": 2
+    },
+    {
+      "id": "91e7",
+      "name": "ana",
+      "role": "web",
+      "age": 23,
+      "email": "ana@ana.com",
+      "ativo": false,
+      "pais": "arg",
+      "nivelExperiencia": 1
+    },
+    {
+      "id": "5ca7",
+      "name": "jose maria",
+      "role": "dev back",
+      "age": 25,
+      "email": "josemaria@ze.com.br",
+      "ativo": true,
+      "pais": "uru",
+      "nivelExperiencia": 8
     }
   ]
 }
